@@ -9,13 +9,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px 20px;
 }
 
-.navbar {
+.navitem {
     display: inline-block;
+    padding: 10px 20px;
 }
 
 ul, li {
     list-style-type: none;
+}
+
+@media screen (min-width: 500px) {
+    .header1 {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .navitem {
+        display: inline-block;
+        padding: 0px
+    }
 }
